@@ -5,6 +5,8 @@
  */
 
 body {
+    background:url(/static/bg.jpg) no-repeat;
+    background-size: 100%;
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -12,14 +14,14 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 .headline {
-    padding: 120px 0;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 20px;
+    color: rgba(220,220,220,1);
 }
 
 .headline h1 {
