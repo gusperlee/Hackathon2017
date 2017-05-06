@@ -1,3 +1,8 @@
+// Importing external npm modules
+var express = require('express');
+var path = require('path')
+var express = require('express');
+var bodyParser = require('body-parser');
 var nGrams = require("word-ngrams");
 var TFIDF = require("document-tfidf");
 var fs = require("fs");
@@ -18,45 +23,33 @@ vocRichness = function(obj) {
 var averageScore = function(year) {
 	var first = fs.readFileSync('' +  year + '/1.txt', 'utf8');
 	var second = fs.readFileSync('' + year + '/2.txt', 'utf8');
+	var third = fs.readFileSync('' + year + '/3.txt', 'utf8');
+	var fourth = fs.readFileSync('' + year + '/4.txt', 'utf8');
+	var fifth = fs.readFileSync('' + year + '/5.txt', 'utf8');
 	var firstScore = vocRichness(TFIDF.countTermFrequencies(first));
 	var secondScore = vocRichness(TFIDF.countTermFrequencies(second));
-	var avgScore = (firstScore + secondScore)/2;
+	var secondScore = vocRichness(TFIDF.countTermFrequencies(third));
+	var secondScore = vocRichness(TFIDF.countTermFrequencies(fourth));
+	var secondScore = vocRichness(TFIDF.countTermFrequencies(fifth));
+	var avgScore = (firstScore + secondScore + thirdScore + fourthScore + fifthScore)/5;
 	return avgScore;
 };
 
 var saveToJSON = function(year) {
-	var thisYear = year;	
 	var scores = JSON.parse(jsonFile);
-	var avgScore = averageScore(thisYear);
+	var avgScore = averageScore(year);
 	console.log(scores);
-	scores[thisYear] = avgScore;
+	scores[year] = avgScore;
 	console.log(JSON.stringify(scores));
 	fs.writeFile('scores.json', JSON.stringify(scores), function (err) {
   	if (err) return console.log(err);
-  	console.log('Hello World > helloworld.txt');
 	});
-		
-	//var dataToAppend = ',' + year + ':' + avgScore + ''; 
-	//fs.appendFile('scores.json', dataToAppend, function (err) {
-  	//	if (err) throw err;
-  	//	console.log('Saved!');
-//});
 };
 
 
-saveToJSON(1956);
+//todo : map the saveToJSON to our app using express
 
-//saveSongStats = function(obj) {
-//		var stream = fs.createWriteStream("database.json");
-//stream.once('open', function(fd) {
-//  stream.appendFile("" + vocRichness(TFIDF.countTermFrequencies(obj)))
-//});
-//};
 
-//read files from a year
-
-// make the average from those readings
-// append to the json file like this : year:score
 
 
 //fs.appendFile('scores.json', avgScore, function (err) {
