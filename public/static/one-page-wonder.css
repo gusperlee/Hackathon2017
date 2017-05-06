@@ -22,16 +22,25 @@ body {
     padding-top: 40px;
     font-size: 20px;
     color: rgba(220,220,220,1);
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+textarea {
+    resize: none;
 }
 
 .headline h1 {
     font-size: 130px;
-    background: rgba(255,255,255,0.9);
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding-top: 100px;
+    //background: rgba(255,255,255,0.9);
 }
 
 .headline h2 {
     font-size: 77px;
-    background: rgba(255,255,255,0.9);
+    padding-bottom: 100px;
+    text-shadow: 0 0 16px rgba(0,0,0,0.8);
+    //background: rgba(255,255,255,0.9);
 }
 
 .featurette-divider {
