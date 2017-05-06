@@ -73,9 +73,13 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr>
-
-        <div id="about" style="text-align: center">
+        <hr class="featurette-divider">
+        <div class="featurette" id="about">
+       	 <h2 class="featurette-heading" style="text-align: center">Richness Graph
+       	     <span class="text-muted"> </span>
+            </h2>
+         
+                <span class="text-muted"></span>
             <canvas id="myChart" width="1000" height="800"></canvas>
 
                 <script src="/lib/src/chart.js">
@@ -101,8 +105,8 @@
                     var countries = document.getElementById("countries").getContext("2d");
                     new Chart(countries).Pie(pieData);
                 </script>
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
+           
+                
             </h2>
         </div>
 
@@ -112,9 +116,10 @@
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <h2 class="featurette-heading">Our team
-            
-                <span class="text-muted">Will Seal the Deal.</span>
+            <h2 class="featurette-heading" style="text-align: center"> Our Amazing Team
+            <br>
+            </br>
+                <span class="text-muted"> </span>
             </h2>
             <p class="lead"> Chatchai Sornkarn </p>
             <p class="lead"> John Gkikas </p>
