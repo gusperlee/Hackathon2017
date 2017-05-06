@@ -1,10 +1,14 @@
 {
-"name": "Hackathon2k17",
-"main": "server.js",
-"dependencies": {
-"body-parser": "^1.15.2",
-"express": "^4.14.0",
-"p": "^0.2.0",
-"path": "^0.12.7"
-}
+  "name": "Hackathon2k17",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "p": "^0.2.0",
+    "path": "^0.12.7",
+    "word-frequency-analyzer": "0.0.1",
+    "fs": "0.0.1-security",
+    "word-ngrams": "~0.2.0",
+    "document-tfidf": "~0.2.1"
+  }
 }
