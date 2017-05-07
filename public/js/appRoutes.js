@@ -11,6 +11,9 @@ angular.module('appRoutes', ['ngRoute'])
 		// route for the packages page
 		.when('/submit', {
 			templateUrl : 'views/submit.html'
+		})
+		.when('/about', {
+			templateUrl : 'views/about.html'
 		});
 
 	$locationProvider.html5Mode(true);
