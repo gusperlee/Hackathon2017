@@ -7,7 +7,9 @@ angular.module('MainService', [])
 		return $http.get('/api/stats');
   };
     stuffFactory.submitLyrics = function(lyricsText) {
-      return $http.post('/api/lyrics', lyricsText);
+      return $http.post('/api/lyrics', {
+			lyrics : lyricsText
+		});
     };
 return stuffFactory;
 }]);
