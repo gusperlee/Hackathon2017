@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 ArialNarrow;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth11716\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth11716\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+You go away, love has for you the smile of another\
+I would want to, but can't be mad at you\
+From now on, you'll forget me\
+It's not your fault, but still you should know\
+\
+That after you, I couldn't live anymore\
+I would only live remembering you\
+After you, I'll have wet eyes\
+Empty hands, a joyless heart\
+\
+With you, I've learnt to laugh\
+And my laughs only came by you\
+After you, I'll only be the shadow\
+Of your shadow, after you\
+\
+Even if I settle down one day\
+If I keep the promise that unites two beings for always\
+After you, I could perhaps give my tenderness\
+But not my love anymore\
+\
+After you, I couldn't live anymore\
+I would only live remembering you\
+After you, I'll have wet eyes\
+Empty hands, a joyless heart\
+\
+With you, I've learnt to laugh\
+And my laughs only came by you\
+After you, I'll only be the shadow\
+Of your shadow, after you\cell \lastrow\row}
