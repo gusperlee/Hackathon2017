@@ -9,6 +9,8 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $lo
         $scope.data = getRates($scope.scores);
   		});
   	};
+    $scope.toggleChart = true;
+
     $scope.toggle1 = false;
     $scope.toggle2 = true;
     getYears = function(obj) {
@@ -29,6 +31,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $lo
     	for (name in obj) {
     			rates.push(obj[name]);
     		}
+        rates.push(0);
     	return rates;
     };
 
@@ -59,6 +62,14 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $lo
     var customLyrics = "default";
     $scope.saveLyrics = function() {
         customLyrics = $scope.form;
+    };
+    $scope.toggle = function() {
+      if ($scope.toggleChart == false) {
+        $scope.toggleChart = true;
+      }
+      else {
+        $scope.toggleChart = false;
+      }
     };
     $scope.submitForm = function() {
         console.log("posting data....");

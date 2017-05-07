@@ -1,10 +1,16 @@
 <div ng-controller="MainController" >
-<form ng-submit="submitForm()" ng-hide="toggle1">
+
+  <div class="page-header" style="width: 100%;
+    border: 1px solid #fcc491;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;"><form ng-submit="submitForm()" ng-hide="toggle1">
   <div class="form-group">
-    <label for="lyricsTextArea">Paste the lyrics to your favorite song, or your own original lyrics, and see how they compare to the Eurovision timeline! </label>
-    <textarea class="form-control" ng-model="form" id="lyricsTextArea" rows="3"></textarea>
+    <label for="lyricsTextArea" style="color:#5d2060">Paste the lyrics to your favorite song, or your own original lyrics, and see how they compare to the Eurovision timeline! </label>
+    <div style="padding: 20px;"><textarea class="form-control" style="alignment: inline-block; border: 1px solid #e6e6fa; height:300px;"ng-model="form" id="lyricsTextArea" rows="3"></textarea>
   </div>
-  <button type="submit" id="submit" ngClick="Submit "class="btn btn-primary">Submit</button>
+</div>
+  <button type="submit" id="submit" style="background-color: #fcc491;border: #fcc491;" ngClick="Submit "class="btn btn-primary">Submit</button>
 </form>
 
 <canvas ng-hide="toggle2" id="line" class="chart chart-line" chart-data="data"
@@ -14,7 +20,8 @@ chart-dataset-override="datasetOverride" chart-click="onClick">
 <div ng-hide="toggle2">
 
 <form ng-submit="tryAnother()">
-<button type="submit" id="submit2" ngClick="Submit "class="btn btn-primary">Try Another!</button>
+<button type="submit" id="submit2" ngClick="Submit" style="background-color: #fcc491;border: #fcc491" class="btn btn-primary">Try Another!</button>
 </form>
+</div>
 </div>
 </div>

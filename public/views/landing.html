@@ -1,4 +1,21 @@
-<canvas id="line" class="chart chart-line" chart-data="data"
-chart-labels="labels" chart-series="series" chart-options="options"
-chart-dataset-override="datasetOverride" chart-click="onClick">
-</canvas>
+<div class="page-header" style="width: 100%;
+  border: 1px solid #fcc491;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;">
+<h1>Is music becoming dumber? Find out!</h1>
+<p style="color:#5d2060">Using a vocabulary richness index with a collection of winning eurovision songs, you can now see the trends in lyrical context throughout the years.</p>
+<form ng-submit="toggle()" ng-show="toggleChart">
+  <div class="form-group">
+  </div>
+  <button type="submit" id="submit" style="background-color: #fcc491;border: #fcc491;" ngClick="Submit"class="btn btn-primary">Click Me!</button>
+</form>
+</div>
+
+<div>
+  <canvas id="line" class="chart chart-line" chart-data="data"
+  chart-labels="labels" chart-series="series" chart-options="options"
+  chart-dataset-override="datasetOverride" chart-click="onClick" ng-hide="toggleChart">
+  </canvas>
+</div>
