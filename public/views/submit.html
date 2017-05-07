@@ -1,1 +1,20 @@
-<p> blablabla</p>
+<div ng-controller="MainController" >
+<form ng-submit="submitForm()" ng-hide="toggle1">
+  <div class="form-group">
+    <label for="lyricsTextArea">Paste the lyrics to your favorite song, or your own original lyrics, and see how they compare to the Eurovision timeline! </label>
+    <textarea class="form-control" ng-model="form" id="lyricsTextArea" rows="3"></textarea>
+  </div>
+  <button type="submit" id="submit" ngClick="Submit "class="btn btn-primary">Submit</button>
+</form>
+
+<canvas ng-hide="toggle2" id="line" class="chart chart-line" chart-data="data"
+chart-labels="labels" chart-series="series" chart-options="options"
+chart-dataset-override="datasetOverride" chart-click="onClick">
+</canvas>
+<div ng-hide="toggle2">
+
+<form ng-submit="tryAnother()">
+<button type="submit" id="submit2" ngClick="Submit "class="btn btn-primary">Try Another!</button>
+</form>
+</div>
+</div>
