@@ -3,12 +3,13 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "document-tfidf": "~0.2.1",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "method-override": "^2.3.8",
     "p": "^0.2.0",
     "path": "^0.12.7",
     "word-frequency-analyzer": "0.0.1",
-    "fs": "0.0.1-security",
-    "word-ngrams": "~0.2.0",
-    "document-tfidf": "~0.2.1"
+    "word-ngrams": "~0.2.0"
   }
 }
