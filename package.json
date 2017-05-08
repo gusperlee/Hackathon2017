@@ -3,7 +3,8 @@
   "main": "server.js",
   "version": "1.0.0",
   "engines": {
-    "node": "4.2.6"
+    "node": "4.2.6",
+    "npm": "3.5.2"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
