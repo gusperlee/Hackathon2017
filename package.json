@@ -1,6 +1,10 @@
 {
   "name": "Hackathon2017",
   "main": "server.js",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.9.4"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "document-tfidf": "~0.2.1",
