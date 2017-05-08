@@ -3,7 +3,7 @@
   "main": "server.js",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.4"
+    "node": "4.2.6"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
