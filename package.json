@@ -1,5 +1,5 @@
 {
-  "name": "Hackathon2k17",
+  "name": "Hackathon2017",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",
